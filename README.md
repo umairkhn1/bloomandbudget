@@ -1,10 +1,27 @@
-# Bloom & Budget Blog
+# Bloom & Budget
 
-A fast, professional, static blog for the Bloom & Budget brand (money & adulting
-for young women). No frameworks, no build tools — pure HTML + CSS, so it can be
-hosted anywhere for free, including Vercel.
+**Live site: [bloomandbudget.vercel.app](https://bloomandbudget.vercel.app/)**
 
-## Folder structure
+A fast, professional static blog for the Bloom & Budget brand — money & adulting content for young women. Deliberately built with **no frameworks and no build tools**: pure HTML + CSS with a hand-crafted design system, so it loads instantly and can be hosted anywhere for free.
+
+![Bloom & Budget homepage](docs/screenshot.png)
+
+## What it does
+
+- Branded homepage with featured articles
+- Three fully written, structured posts: budgeting a first salary, common money mistakes, and building an emergency fund
+- About + contact page
+- Complete hand-built design system (typography, color, cards, spacing) in a single stylesheet
+- Fully responsive and SEO-friendly (semantic HTML, meta descriptions, per-page titles)
+
+## Built with
+
+- Pure HTML + CSS — zero dependencies, zero build step
+- Deployed on Vercel with automatic deploys from this repo
+
+## Repository guide
+
+A quick map of the files:
 
 ```
 bloom-budget-blog/
@@ -12,47 +29,17 @@ bloom-budget-blog/
 ├── about.html                  ← about + contact
 ├── css/
 │   └── styles.css              ← entire design system
-├── img/
-│   ├── hero.png
-│   ├── cover-budget.png
-│   ├── cover-mistakes.png
-│   └── cover-emergency.png
-├── posts/
-│   ├── budget-first-salary.html
-│   ├── money-mistakes.html
-│   └── emergency-fund.html
+├── img/                        ← hero + article cover images
+├── posts/                      ← the three full articles
 └── README.md
 ```
 
-## Deploy to Vercel (free, ~10 minutes)
+Adding a new post: copy any file from `posts/`, change the title/meta/content, add a cover image to `img/`, and link it from the homepage card grid.
 
-### Step 1 — Put the files on GitHub
-1. Create a free account at github.com (if you don't have one).
-2. Click **New repository**, name it `bloom-budget-blog`, set it to **Public**, click **Create**.
-3. On the repo page click **“uploading an existing file”**.
-4. Drag in ALL the files/folders from this zip (index.html, about.html, the css/
-   img/ posts/ folders) — not the zip itself.
-5. Click **Commit changes**.
+---
 
-### Step 2 — Deploy on Vercel
-1. Create a free account at vercel.com — sign up **with GitHub**.
-2. Click **Add New → Project**.
-3. Find `bloom-budget-blog` in the list and click **Import**.
-4. Leave every setting as-is and click **Deploy**.
-5. In ~30 seconds you get a live URL like `bloom-budget-blog.vercel.app`.
+**Muhammad Umair** — freelance web developer, Abbottabad, Pakistan
 
-### Step 3 — Custom domain (optional)
-In Vercel: Project → Settings → Domains → add `bloomandbudget.com` (or any
-domain you buy) and follow the DNS instructions shown.
-
-## Before you launch — replace these placeholders
-- `https://payhip.com/your-store` (appears in nav, footers, and post CTA boxes)
-  → your real Payhip store link.
-- `hello@bloomandbudget.com` on about.html → your real contact email.
-- Newsletter form on index.html → connect a free service (Buttondown, Beehiiv,
-  or Mailchimp) and paste its form action, or keep the placeholder.
-
-## Adding a new post later
-1. Copy any file from `posts/`, rename it, and change the title, text, and image.
-2. Add a card for it in the post grid in `index.html`.
-3. Re-upload the changed files to GitHub — Vercel redeploys automatically.
+- Portfolio: [portfolio-3d-nine-alpha.vercel.app](https://portfolio-3d-nine-alpha.vercel.app/)
+- GitHub: [github.com/umairkhn1](https://github.com/umairkhn1)
+- Email: nsumair006@gmail.com
