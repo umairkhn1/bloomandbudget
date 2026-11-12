@@ -495,6 +495,8 @@ def build_post(post):
 {body}
 
 {share_bar(post['titlePlain'], url)}
+
+      <p class="back-to-blog"><a href="/blog">&larr; Back to all posts</a></p>
     </article>
 
     <aside class="author-box" aria-label="About the author">
