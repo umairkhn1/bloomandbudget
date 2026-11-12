@@ -1,0 +1,38 @@
+{
+  "site": {
+    "name": "Bloom & Budget",
+    "domain": "https://bloomandbudget.com",
+    "domainHost": "bloomandbudget.com",
+    "contactEmail": "hello@bloomandbudget.com",
+    "tagline": "Money & adulting, minus the lecture",
+    "description": "A warm, no-shame blog about budgeting your first salary, dodging fresh-grad money mistakes, and adulting like you actually know what you're doing.",
+    "audience": "young women starting their first job in the United States",
+    "audienceShort": "young women starting their first job",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "niche": "A",
+    "nicheLabel": "money & adulting only",
+    "adsenseClient": "ca-pub-9134656615924869",
+    "analytics": {
+      "provider": null,
+      "ga4MeasurementId": "",
+      "plausibleDomain": "bloomandbudget.com"
+    },
+    "newsletter": {
+      "provider": "formspree",
+      "endpoint": "",
+      "mailchimpUser": "",
+      "mailchimpListId": "",
+      "buttondownUser": "",
+      "doubleOptIn": true
+    }
+  },
+  "author": {
+    "name": "Emma Jane",
+    "role": "Writer & founder",
+    "bio": "Emma Jane writes Bloom & Budget for young women in their first job, the year when a salary finally lands and nobody explains what to do with it. She believes a budget is a permission slip, not a punishment, and that most money advice fails because it talks down to people. Everything here is written to be used tonight, not admired.",
+    "photo": "/img/author/emma-jane.jpg",
+    "photoPlaceholder": true,
+    "photoAlt": "Emma Jane, writer and founder of Bloom & Budget"
+  }
+}

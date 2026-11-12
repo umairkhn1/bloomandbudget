@@ -1,0 +1,13 @@
+        <div class="newsletter newsletter-{{VARIANT}}" data-newsletter
+             data-provider="{{PROVIDER}}" data-endpoint="{{ENDPOINT}}">
+          <span class="eyebrow">The Money Bloom newsletter</span>
+          <h2>Short money emails. Zero jargon.</h2>
+          <p>One useful idea you can actually act on, plus first dibs on new printables and guides.</p>
+          <form class="newsletter-form" novalidate>
+            <label class="sr-only" for="{{UID}}">Your email address</label>
+            <input type="email" id="{{UID}}" name="email" placeholder="your@email.com" required autocomplete="email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p class="form-msg" role="status" aria-live="polite" data-form-msg></p>
+          <small class="newsletter-note">Double opt-in: you&rsquo;ll get a confirmation email first, and nothing is added until you click the link. Unsubscribe any time. I only use your email to send the newsletter. Read the <a href="/privacy">Privacy Policy</a>.</small>
+        </div>

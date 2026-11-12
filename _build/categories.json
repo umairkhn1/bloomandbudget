@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Budgeting",
+    "slug": "budgeting",
+    "blurb": "The plan for the money you already earn, before it disappears.",
+    "intro": "Budgets get sold as restriction. They work better as permission: this much for rent, this much for saving, this much to spend without checking the balance first. Everything in this category is the version that survives a real first salary.",
+    "seoTitle": "Budgeting Posts for Your First Salary",
+    "meta": "Budgeting guides for your first salary: how to split a paycheck, automate savings and keep a life you actually enjoy. No shame, no spreadsheets you'll abandon."
+  },
+  {
+    "name": "Saving",
+    "slug": "saving",
+    "blurb": "Building a cushion so a bad week doesn't become a bad year.",
+    "intro": "Saving on an entry-level salary is not about willpower, it is about removing the decision. These posts are about the cushion: what to build, how much, and what to do when the numbers feel too small to matter.",
+    "seoTitle": "Saving Guides for Entry-Level Salaries",
+    "meta": "Realistic saving guides for entry-level salaries: how to build an emergency fund, automate transfers and keep going when rent eats half your paycheck."
+  },
+  {
+    "name": "Mistakes",
+    "slug": "mistakes",
+    "blurb": "The expensive lessons someone else already paid for.",
+    "intro": "Nobody hands you a manual for the first year of real money, so most people learn by paying for it. This category is the shortcuts: the mistakes that cost the most, why they happen, and the small fix that undoes most of the damage.",
+    "seoTitle": "Money Mistakes to Skip in Your Twenties",
+    "meta": "The money mistakes new grads make most often, what each one costs over a year, and the simple fix for each. Learn them from someone else's receipts."
+  },
+  {
+    "name": "Life",
+    "slug": "life",
+    "blurb": "The rest of the adulting: home, work and looking after yourself.",
+    "intro": "Money is not the whole story of getting your life together. This is the shelf for the other adulting work: the tiny apartment, the job hunt, and taking care of yourself when both are exhausting.",
+    "seoTitle": "Life: Home, Work and Looking After Yourself",
+    "meta": "The non-money side of adulting: small bedroom organization, a beginner skincare routine, and honest talk about the job hunt in tech."
+  }
+]
