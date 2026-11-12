@@ -398,11 +398,19 @@ def build_post(post):
         disclaimer = ('        <p class="post-disclaimer">Educational content only, not '
                       'financial advice. Read the <a href="/disclaimer">full disclaimer</a>.</p>')
 
-    # related: same category first, then recent others
-    same = [p for p in POSTS if p["slug"] != post["slug"]
+    # related: same category, then the same shelf (money vs life), then the rest
+    current = post["slug"]
+    same = [p for p in POSTS if p["slug"] != current
             and p["categorySlug"] == post["categorySlug"]]
-    others = [p for p in POSTS if p["slug"] != post["slug"] and p not in same]
-    related = (same + others)[:3]
+    cluster = [p for p in POSTS if p["slug"] != current and p not in same
+               and p["money"] == post["money"]]
+    rest = [p for p in POSTS if p["slug"] != current
+            and p not in same and p not in cluster]
+    related = (same + cluster + rest)[:3]
+    same_cat = related and all(
+        r["categorySlug"] == post["categorySlug"] for r in related)
+    related_heading = (f"More from {post['category']}" if same_cat
+                       else "Keep reading")
 
     ordered = sorted(POSTS, key=lambda p: p["date"])
     idx = [p["slug"] for p in ordered].index(post["slug"])
@@ -503,7 +511,7 @@ def build_post(post):
         <div class="section-head">
           <div>
             <span class="eyebrow">Keep reading</span>
-            <h2>More from {esc(post['category'])}</h2>
+            <h2>{esc(related_heading)}</h2>
           </div>
           <p><a href="/blog">See all posts</a></p>
         </div>
