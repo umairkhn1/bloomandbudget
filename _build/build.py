@@ -37,7 +37,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "5"
+CSS_VERSION = "6"
 
 WRITTEN = []
 
@@ -277,6 +277,16 @@ def post_grid(posts):
     return "\n".join(post_card(p) for p in posts)
 
 
+def grid_class(posts):
+    """Column count that keeps the last row full: 1 wide card, 2x2, or 3 across."""
+    n = len(posts)
+    if n == 1:
+        return "post-grid post-grid--single"
+    if n % 3 == 1 and n % 2 == 0:
+        return "post-grid post-grid--two"
+    return "post-grid"
+
+
 def share_bar(title, url):
     wa = "https://wa.me/?text=" + esc(f"{title} {url}")
     x = ("https://twitter.com/intent/tweet?text=" + esc(title)
@@ -366,7 +376,7 @@ def page_shell(meta, main_html, active="", extra_head="", body_class=""):
         "",
         footer(),
         "",
-        '  <script src="/js/site.js?v=5" defer></script>',
+        '  <script src="/js/site.js?v=6" defer></script>',
         "</body>",
         "</html>",
         "",
@@ -558,7 +568,7 @@ def build_index():
                 'loading="eager" fetchpriority="high" decoding="async">')
 
     career_cards = post_grid(career[:3])
-    career_grid_class = "post-grid post-grid--single" if len(career) == 1 else "post-grid"
+    career_grid_class = grid_class(career[:3])
 
     main = f"""    <!-- HERO -->
     <section class="hero">
@@ -682,7 +692,7 @@ def build_blog():
         </ul>
 
         <h2 class="sr-only">All posts</h2>
-        <div class="post-grid" data-post-grid>
+        <div class="{grid_class(POSTS)}" data-post-grid>
 {cards}
         </div>
 
@@ -740,7 +750,7 @@ def build_category(cat):
     <section class="section">
       <div class="container">
         <h2 class="sr-only">All {esc(cat['name'])} posts</h2>
-        <div class="post-grid">
+        <div class="{grid_class(posts)}">
 {cards}
         </div>
         <p class="back-to-blog"><a href="/blog">&larr; Back to all posts</a></p>
