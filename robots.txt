@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bloomandbudget.com/sitemap.xml
+Sitemap: https://bloomandbudget.vercel.app/sitemap.xml

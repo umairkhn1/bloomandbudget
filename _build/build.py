@@ -37,7 +37,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "6"
+CSS_VERSION = "7"
 
 WRITTEN = []
 
@@ -89,6 +89,7 @@ def fill(template, tokens):
 HEADER_TMPL = (COMP / "header.html").read_text()
 FOOTER_TMPL = (COMP / "footer.html").read_text()
 NEWSLETTER_TMPL = (COMP / "newsletter.html").read_text()
+NEWSLETTER_SOON_TMPL = (COMP / "newsletter-soon.html").read_text()
 
 NAV_KEYS = {"home": "HOME", "blog": "BLOG", "about": "ABOUT",
             "free-budget-template": "TEMPLATE"}
@@ -137,6 +138,8 @@ def newsletter(variant="section", subject="Money Bloom"):
     n = SITE["newsletter"]
     provider = n.get("provider") or ""
     endpoint = n.get("endpoint") or ""
+    if not endpoint:
+        return fill(NEWSLETTER_SOON_TMPL, {"VARIANT": variant, "EMAIL": EMAIL})
     return fill(NEWSLETTER_TMPL, {
         "UID": uid,
         "VARIANT": variant,
@@ -352,6 +355,7 @@ def page_tokens():
         "POST_COUNT": len(POSTS),
         "AVG_READ": int(round(sum(p["_read"] for p in POSTS) / len(POSTS))),
         "EMAIL": EMAIL,
+        "DOMAIN": DOMAIN,
         "DOMAIN_HOST": SITE["domainHost"],
         "AUTHOR_NAME": AUTHOR["name"],
         "AUTHOR_BIO": esc(AUTHOR["bio"]),
@@ -376,7 +380,7 @@ def page_shell(meta, main_html, active="", extra_head="", body_class=""):
         "",
         footer(),
         "",
-        '  <script src="/js/site.js?v=6" defer></script>',
+        '  <script src="/js/site.js?v=7" defer></script>',
         "</body>",
         "</html>",
         "",

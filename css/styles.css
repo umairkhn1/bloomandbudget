@@ -937,6 +937,13 @@ input:focus-visible,
 }
 .form-msg.is-error { color: #8c2f1f; font-weight: 600; }
 .form-msg.is-success { color: #2f5840; font-weight: 600; }
+
+.newsletter-soon-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
 .newsletter-note {
   display: block;
   max-width: 54ch;

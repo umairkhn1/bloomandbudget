@@ -1,9 +1,9 @@
 {
   "site": {
     "name": "Bloom & Budget",
-    "domain": "https://bloomandbudget.com",
-    "domainHost": "bloomandbudget.com",
-    "contactEmail": "hello@bloomandbudget.com",
+    "domain": "https://bloomandbudget.vercel.app",
+    "domainHost": "bloomandbudget.vercel.app",
+    "contactEmail": "nsumair006@gmail.com",
     "tagline": "Money & adulting, minus the lecture",
     "description": "A warm, no-shame blog about budgeting your first salary, dodging fresh-grad money mistakes, and adulting like you actually know what you're doing.",
     "audience": "young women starting their first job in the United States",
@@ -16,7 +16,7 @@
     "analytics": {
       "provider": null,
       "ga4MeasurementId": "",
-      "plausibleDomain": "bloomandbudget.com"
+      "plausibleDomain": "bloomandbudget.vercel.app"
     },
     "newsletter": {
       "provider": "formspree",

@@ -285,8 +285,8 @@
           .catch(function (err) {
             var text =
               err && err.message === "not-configured"
-                ? "The signup box isn't connected yet. Email hello@bloomandbudget.com and I'll add you by hand."
-                : "That didn't go through. Please try again in a moment, or email hello@bloomandbudget.com.";
+                ? "The signup box isn't connected yet. Please try again later."
+                : "That didn't go through. Please try again in a moment.";
             showMessage(box, "error", text);
           })
           .then(function () {

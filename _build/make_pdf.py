@@ -83,7 +83,7 @@ def header(c, page, kicker, title, subtitle=None):
     c.line(M, 0.78 * inch, W - M, 0.78 * inch)
     c.setFont("Sans", 7.5)
     c.setFillColor(MUTED)
-    c.drawString(M, 0.58 * inch, "Bloom & Budget  |  bloomandbudget.com  |  Free for personal use")
+    c.drawString(M, 0.58 * inch, "Bloom & Budget  |  bloomandbudget.vercel.app  |  Free for personal use")
     c.drawRightString(W - M, 0.58 * inch, f"Page {page} of 2")
 
 
@@ -245,7 +245,7 @@ def page_two(c):
     c.setFillColor(MUTED)
     c.setFont("Sans", 8)
     c.drawString(M, y - 88, "Educational content only, not financial advice. No guarantees. Read the full disclaimer at")
-    c.drawString(M, y - 100, "bloomandbudget.com/disclaimer. Free for personal use; please do not resell or republish.")
+    c.drawString(M, y - 100, "bloomandbudget.vercel.app/disclaimer. Free for personal use; please do not resell or republish.")
 
 
 def main():

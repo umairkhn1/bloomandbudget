@@ -14,7 +14,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
-DOMAINS_OK = ("https://bloomandbudget.com",)
+DOMAINS_OK = (json.loads((Path(__file__).parent / "config.json").read_text())["site"]["domain"],)
 
 pages = {}
 for path in sorted(ROOT.rglob("*.html")):
@@ -152,9 +152,11 @@ for rel, doc in pages.items():
             problems.append(f"{rel}: img without alt: {img[:80]}")
 
 # ---------------------------------------------------------------- leftovers
+RETIRED_HOSTS = ("bloomandbudget.com",)
 for rel, doc in pages.items():
-    if "vercel.app" in doc:
-        problems.append(f"{rel}: still references vercel.app")
+    for bad in RETIRED_HOSTS:
+        if bad in doc:
+            problems.append(f"{rel}: still references retired host {bad}")
     if 'action="#"' in doc:
         problems.append(f"{rel}: placeholder form action")
     if "REPLACE_ME" in doc:

@@ -85,7 +85,7 @@ def og_card(base_image, dest, title, eyebrow):
 
     # footer wordmark
     draw.text((pad, H - 96), "Bloom & Budget", font=font(SERIF_BOLD, 30), fill=INK)
-    draw.text((pad + 300, H - 90), "bloomandbudget.com",
+    draw.text((pad + 300, H - 90), "bloomandbudget.vercel.app",
               font=font(SANS, 22), fill=MUTED)
 
     img.convert("RGB").save(dest, "JPEG", quality=82, optimize=True, progressive=True)
