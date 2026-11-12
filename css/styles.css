@@ -628,6 +628,9 @@ h3 { font-size: 1.3rem; line-height: 1.3; }
    ============================================ */
 
 /* ---------- Accessibility ---------- */
+/* author-level display rules would otherwise beat the hidden attribute */
+[hidden] { display: none !important; }
+
 .skip-link {
   position: absolute;
   left: -9999px;
