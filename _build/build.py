@@ -563,7 +563,7 @@ def build_index():
         <div>
           <span class="eyebrow">Money &middot; Adulting &middot; No Shame</span>
           <h1>Grow your money while you <span class="accent">grow up.</span></h1>
-          <p class="lead">Real talk about budgeting your first salary, dodging the mistakes everyone makes in their twenties, and building a life you don't need a vacation from.</p>
+          <p class="lead">Real talk about budgeting your first salary, dodging the mistakes everyone makes in their twenties, and building a life you don't need a vacation from. Written for young women starting their first job in the United States.</p>
           <div class="hero-actions">
             <a href="/blog" class="btn btn-primary">Read the Blog</a>
             <a href="/about" class="btn btn-outline">About B&amp;B</a>
@@ -629,7 +629,7 @@ def build_index():
       </div>
     </section>
 
-    <p class="sr-only">Latest posts: {" | ".join(p["titlePlain"] for p in POSTS)}</p>"""
+"""
 
     jsonld = jsonld_script({
         "@context": "https://schema.org",
@@ -644,7 +644,7 @@ def build_index():
 
     meta = {
         "title": "Bloom & Budget: Money & Adulting for Your First Salary",
-        "desc": "A warm, no-shame blog about budgeting your first salary, dodging fresh-grad money mistakes, and adulting like you actually know what you're doing.",
+        "desc": "A warm, no-shame blog for young women starting their first job in the US: budgeting a first salary, dodging fresh-grad money mistakes, adulting on purpose.",
         "path": "/",
         "og": "/img/og/home.jpg",
         "jsonld": jsonld,
