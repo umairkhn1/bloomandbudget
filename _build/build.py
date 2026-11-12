@@ -37,7 +37,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "3"
+CSS_VERSION = "4"
 
 WRITTEN = []
 
@@ -366,7 +366,7 @@ def page_shell(meta, main_html, active="", extra_head="", body_class=""):
         "",
         footer(),
         "",
-        '  <script src="/js/site.js?v=3" defer></script>',
+        '  <script src="/js/site.js?v=4" defer></script>',
         "</body>",
         "</html>",
         "",
