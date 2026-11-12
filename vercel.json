@@ -4,6 +4,36 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/posts/simple-skincare-routine-glowing-skin.html",
+      "destination": "/posts/budget-first-salary",
+      "statusCode": 301
+    },
+    {
+      "source": "/posts/simple-skincare-routine-glowing-skin",
+      "destination": "/posts/budget-first-salary",
+      "statusCode": 301
+    },
+    {
+      "source": "/posts/small-bedroom-organization-ideas.html",
+      "destination": "/posts/money-mistakes",
+      "statusCode": 301
+    },
+    {
+      "source": "/posts/small-bedroom-organization-ideas",
+      "destination": "/posts/money-mistakes",
+      "statusCode": 301
+    },
+    {
+      "source": "/life.html",
+      "destination": "/career",
+      "statusCode": 301
+    },
+    {
+      "source": "/life",
+      "destination": "/career",
+      "statusCode": 301
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "statusCode": 301
@@ -51,11 +81,6 @@
     {
       "source": "/mistakes.html",
       "destination": "/mistakes",
-      "statusCode": 301
-    },
-    {
-      "source": "/life.html",
-      "destination": "/life",
       "statusCode": 301
     },
     {

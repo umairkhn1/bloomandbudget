@@ -37,7 +37,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "4"
+CSS_VERSION = "5"
 
 WRITTEN = []
 
@@ -121,8 +121,8 @@ def footer():
         "CATEGORY_LINKS": category_links,
         "SITE_LINKS": site_links,
         "TAGLINE_LONG": esc(f"{SITE['tagline']}. Built for first salaries, first "
-                            "apartments, and first steps toward getting your "
-                            "life together."),
+                            "paychecks, and the money decisions that come "
+                            "with them."),
         "EMAIL": EMAIL,
         "YEAR": str(datetime.date.today().year),
     })
@@ -366,7 +366,7 @@ def page_shell(meta, main_html, active="", extra_head="", body_class=""):
         "",
         footer(),
         "",
-        '  <script src="/js/site.js?v=4" defer></script>',
+        '  <script src="/js/site.js?v=5" defer></script>',
         "</body>",
         "</html>",
         "",
@@ -545,7 +545,7 @@ def build_post(post):
 
 def build_index():
     money = [p for p in POSTS if p["money"]]
-    life = [p for p in POSTS if not p["money"]]
+    career = [p for p in POSTS if not p["money"]]
     avg_read = int(round(sum(p["_read"] for p in POSTS) / len(POSTS)))
     total_posts = len(POSTS)
 
@@ -557,7 +557,8 @@ def build_index():
                 'coins, coffee and a plant" width="800" height="880" '
                 'loading="eager" fetchpriority="high" decoding="async">')
 
-    life_cards = post_grid(life[:3])
+    career_cards = post_grid(career[:3])
+    career_grid_class = "post-grid post-grid--single" if len(career) == 1 else "post-grid"
 
     main = f"""    <!-- HERO -->
     <section class="hero">
@@ -590,7 +591,7 @@ def build_index():
             <span class="eyebrow">Fresh from the desk</span>
             <h2>The latest money posts</h2>
           </div>
-          <p>Made for first salaries, first apartments, and first &ldquo;wait, is this&hellip; mine?&rdquo; moments.</p>
+          <p>Made for first salaries, first budgets, and first &ldquo;wait, is this&hellip; mine?&rdquo; moments.</p>
         </div>
 
         <div class="post-grid">
@@ -607,18 +608,18 @@ def build_index():
       </div>
     </section>
 
-    <!-- LIFE SHELF -->
+    <!-- CAREER -->
     <section class="section">
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Off the money shelf</span>
-            <h2>The Life corner</h2>
+            <span class="eyebrow">Beyond the budget</span>
+            <h2>The career corner</h2>
           </div>
-          <p>The apartment, the job hunt, the small stuff that still counts. <a href="/life">All Life posts &rarr;</a></p>
+          <p>Your salary is the biggest line in your budget, so the job hunt counts. <a href="/career">All career posts &rarr;</a></p>
         </div>
-        <div class="post-grid">
-{life_cards}
+        <div class="{career_grid_class}">
+{career_cards}
         </div>
       </div>
     </section>
@@ -664,7 +665,7 @@ def build_blog():
       <div class="container">
         <span class="eyebrow">The archive</span>
         <h1>Every post, newest first</h1>
-        <p class="lead">Money first, life too. {len(POSTS)} posts on budgeting, saving, the mistakes worth skipping, and the rest of adulting.</p>
+        <p class="lead">{len(POSTS)} posts on budgeting, saving, the mistakes worth skipping, and the career moves that pay for all of it.</p>
       </div>
     </section>
 
@@ -672,7 +673,7 @@ def build_blog():
       <div class="container">
         <div class="blog-tools">
           <label class="sr-only" for="post-search">Search posts</label>
-          <input type="search" id="post-search" class="post-search" placeholder="Search posts, e.g. salary, savings, apartment" autocomplete="off" data-post-search>
+          <input type="search" id="post-search" class="post-search" placeholder="Search posts, e.g. salary, savings, credit" autocomplete="off" data-post-search>
           <p class="search-status" role="status" aria-live="polite" data-search-status></p>
         </div>
 
@@ -697,7 +698,7 @@ def build_blog():
 
     meta = {
         "title": "All Posts: The Bloom & Budget Archive",
-        "desc": "Every Bloom & Budget post in one place: budgeting your first salary, building savings, money mistakes to skip, and the rest of adulting.",
+        "desc": "Every Bloom & Budget post in one place: budgeting your first salary, building savings, money mistakes to skip, and the career moves that pay for it.",
         "path": "/blog",
         "og": "/img/og/blog.jpg",
         "jsonld": jsonld_script({

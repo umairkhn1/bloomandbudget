@@ -2,7 +2,10 @@
 
 Money & adulting, minus the lecture. A static blog built for young women starting
 their first job: budgeting the first salary, building savings, skipping the
-expensive mistakes, and the rest of adulting.
+expensive mistakes, and the career moves that pay for all of it.
+
+Categories are Budgeting, Saving, Mistakes and Career. The niche is deliberately
+narrow: money, saving, and work. Nothing lifestyle, home or beauty.
 
 Live at **https://bloomandbudget.com**
 

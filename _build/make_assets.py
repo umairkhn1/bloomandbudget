@@ -163,12 +163,6 @@ def main():
         cover_webp(png, src + ".webp", (1200, 750))
     cover_webp("hero.png", "hero.webp", (800, 880))
 
-    for name in ["cover-budget", "cover-emergency", "cover-mistakes",
-                 "cover-skincare", "cover-bedroom", "cover-jobs"]:
-        original = IMG / name
-        p = next(original.parent.glob(name + ".*"), None)
-        print("webp:", p.name if p else name)
-
     # 2. per-page OG cards
     og = IMG / "og"
     og.mkdir(exist_ok=True)
