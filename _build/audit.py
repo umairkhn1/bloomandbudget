@@ -148,7 +148,8 @@ for rel, doc in pages.items():
             if not (ROOT / src.group(1).split("?")[0].lstrip("/")).exists():
                 problems.append(f"{rel}: img not found: {src.group(1)}")
         alt = re.search(r'alt="([^"]*)"', img)
-        if not alt or not alt.group(1).strip():
+        decorative = 'aria-hidden="true"' in img
+        if not alt or (not alt.group(1).strip() and not decorative):
             problems.append(f"{rel}: img without alt: {img[:80]}")
 
 # ---------------------------------------------------------------- leftovers

@@ -16,7 +16,7 @@
     "analytics": {
       "provider": null,
       "ga4MeasurementId": "",
-      "plausibleDomain": "bloomandbudget.vercel.app"
+      "plausibleDomain": "www.bloomandbudget.blog"
     },
     "newsletter": {
       "provider": "formspree",

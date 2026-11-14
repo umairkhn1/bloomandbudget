@@ -134,9 +134,29 @@
     "coverWidth": 1200,
     "coverHeight": 750,
     "coverAlt": "Glass jar with folded banknotes and a small plant",
-    "excerpt": "“Save 3–6 months of expenses” is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
+    "excerpt": "\u201cSave 3\u20136 months of expenses\u201d is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Start at $500, then build to one month of essential expenses, then three. Keep it in a separate high-yield savings account, fund it automatically on payday, and spend it only on things that are genuinely unexpected and genuinely urgent."
+  },
+  {
+    "slug": "first-apartment-cost",
+    "title": "What Moving Out Actually Costs<br>(Before You Own a Single Thing)",
+    "titlePlain": "What Moving Out Actually Costs (Before You Own a Single Thing)",
+    "seoTitle": "What Moving Out Actually Costs: First Apartment Budget",
+    "meta": "The deposit is the cheap part. A realistic first-apartment budget with the move-in stack, setup costs and month-two bills, plus what rent can actually afford.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-14",
+    "cover": "/img/cover-first-apartment.webp",
+    "coverFallback": "/img/cover-first-apartment.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Moving boxes, house keys and a plant on a cream linen surface",
+    "excerpt": "The security deposit is the number everyone plans for, and it's rarely the biggest one. Here's the full move-in bill, plus what rent can actually afford.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "Expect three to four months of rent in cash before you sleep there: deposit, first month, application fee, utility deposits and roughly $550 to $1,380 to set up an empty room. On a $1,150 apartment that is about $2,900 at the barest level and $3,700 with normal furniture."
   }
 ]

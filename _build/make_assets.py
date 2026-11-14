@@ -10,7 +10,9 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
+import json as _json
 ROOT = Path(__file__).resolve().parent.parent
+DOMAIN_HOST = _json.loads((Path(__file__).parent / 'config.json').read_text())['site']['domainHost']
 BUILD = ROOT / "_build"
 IMG = ROOT / "img"
 
@@ -85,7 +87,7 @@ def og_card(base_image, dest, title, eyebrow):
 
     # footer wordmark
     draw.text((pad, H - 96), "Bloom & Budget", font=font(SERIF_BOLD, 30), fill=INK)
-    draw.text((pad + 300, H - 90), "bloomandbudget.vercel.app",
+    draw.text((pad + 300, H - 90), DOMAIN_HOST,
               font=font(SANS, 22), fill=MUTED)
 
     img.convert("RGB").save(dest, "JPEG", quality=82, optimize=True, progressive=True)
