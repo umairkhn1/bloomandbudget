@@ -4,14 +4,25 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/posts/:slug.html",
       "has": [
         {
           "type": "host",
           "value": "bloomandbudget.vercel.app"
         }
       ],
-      "destination": "https://www.bloomandbudget.blog/$1",
+      "destination": "https://www.bloomandbudget.blog/posts/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/:page.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "bloomandbudget.vercel.app"
+        }
+      ],
+      "destination": "https://www.bloomandbudget.blog/:page",
       "statusCode": 301
     },
     {
@@ -97,6 +108,17 @@
     {
       "source": "/posts/:slug.html",
       "destination": "/posts/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bloomandbudget.vercel.app"
+        }
+      ],
+      "destination": "https://www.bloomandbudget.blog/$1",
       "statusCode": 301
     }
   ],
