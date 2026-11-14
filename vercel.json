@@ -4,6 +4,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bloomandbudget.vercel.app"
+        }
+      ],
+      "destination": "https://www.bloomandbudget.blog/$1",
+      "statusCode": 301
+    },
+    {
       "source": "/posts/simple-skincare-routine-glowing-skin.html",
       "destination": "/posts/budget-first-salary",
       "statusCode": 301
