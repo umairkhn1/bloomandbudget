@@ -17,6 +17,7 @@ Run:    python3 _build/build.py
 import json
 import re
 import html
+import html as html_lib
 import math
 import datetime
 from pathlib import Path
@@ -37,7 +38,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "7"
+CSS_VERSION = "8"
 
 WRITTEN = []
 
@@ -228,6 +229,43 @@ def jsonld_script(obj):
             + "\n  </script>\n")
 
 
+
+def extract_faq(body_html):
+    """Q/A pairs from the post's FAQ section, as plain text for FAQPage schema."""
+    m = re.search(r"<h2[^>]*>FAQ[^<]*</h2>", body_html)
+    if not m:
+        return []
+    rest = body_html[m.end():]
+    # the FAQ ends at the next heading, the next section or the next component block
+    stop = re.search(r"<h2|<section|<div|<aside|<footer", rest)
+    chunk = rest[:stop.start()] if stop else rest
+    out = []
+    parts = re.split(r"<h3[^>]*>", chunk)[1:]
+    for part in parts:
+        q_html, _, after = part.partition("</h3>")
+        question = html_lib.unescape(re.sub(r"<[^>]+>", "", q_html)).strip()
+        answer = " ".join(
+            html_lib.unescape(re.sub(r"<[^>]+>", "", pa)).strip()
+            for pa in re.findall(r"<p[^>]*>(.*?)</p>", after, re.S))
+        answer = re.sub(r"\s+", " ", answer).strip()
+        if question.endswith("?") and answer:
+            out.append((question, answer))
+    return out
+
+
+def faq_node(pairs, url):
+    return {
+        "@type": "FAQPage",
+        "@id": url + "#faq",
+        "url": url,
+        "mainEntity": [
+            {"@type": "Question",
+             "name": q,
+             "acceptedAnswer": {"@type": "Answer", "text": a}}
+            for q, a in pairs],
+    }
+
+
 def person_node():
     return {
         "@type": "Person",
@@ -382,7 +420,7 @@ def page_shell(meta, main_html, active="", extra_head="", body_class=""):
         "",
         footer(),
         "",
-        '  <script src="/js/site.js?v=7" defer></script>',
+        '  <script src="/js/site.js?v=8" defer></script>',
         "</body>",
         "</html>",
         "",
@@ -447,6 +485,7 @@ def build_post(post):
     post_nav = ('      <nav class="post-nav" aria-label="More posts">\n'
                 + "\n".join(nav_parts) + "\n      </nav>")
 
+    faq_pairs = extract_faq(body)
     article_jsonld = jsonld_script({
         "@context": "https://schema.org",
         "@graph": [
@@ -481,6 +520,19 @@ def build_post(post):
             },
         ],
     })
+    if faq_pairs:
+        article_jsonld += jsonld_script(
+            {"@context": "https://schema.org", **faq_node(faq_pairs, url)})
+
+    answer = post.get("shortAnswer", "")
+    if answer:
+        intro_end = re.search(r"\n\s*<h2", body)
+        block = ('\n      <p class="short-answer"><strong>Short answer:</strong> '
+                 + answer + "</p>\n")
+        if intro_end:
+            body = body[:intro_end.start()] + block + body[intro_end.start():]
+        else:
+            body = body + block
 
     main = f"""    <section class="article-hero">
       <div class="container">
@@ -875,8 +927,15 @@ def build_sitemap():
            + entries + "\n</urlset>\n")
     write("sitemap.xml", xml)
 
+    bots = ["Googlebot", "Bingbot", "OAI-SearchBot", "GPTBot", "ChatGPT-User",
+            "PerplexityBot", "Perplexity-User", "ClaudeBot", "Claude-SearchBot",
+            "Claude-User", "Applebot", "Applebot-Extended", "Google-Extended", "CCBot"]
+    groups = "\n".join(f"User-agent: {b}\nAllow: /\n" for b in bots)
     robots = ("User-agent: *\nAllow: /\n\n"
-              f"Sitemap: {DOMAIN}/sitemap.xml\n")
+              "# Search and answer engines, explicitly allowed for crawling and citation\n"
+              + groups +
+              f"\nSitemap: {DOMAIN}/sitemap.xml\n")
+    write("robots.txt", robots)
     write("robots.txt", robots)
 
 

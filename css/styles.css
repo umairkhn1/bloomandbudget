@@ -471,6 +471,22 @@ h3 { font-size: 1.3rem; line-height: 1.3; }
   color: var(--ink);
 }
 
+/* answer-first block at the top of every post: what a human skims, what an answer engine quotes */
+.short-answer {
+  margin: 2rem 0 2.4rem;
+  padding: 1.15rem 1.4rem;
+  background: var(--sage-light);
+  border-left: 4px solid var(--sage);
+  border-radius: 0 12px 12px 0;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.short-answer strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .callout {
   background: var(--sage-light);
   border-radius: 14px;

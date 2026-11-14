@@ -16,7 +16,8 @@
     "coverAlt": "Cream desk with a bank card, a small notebook and a cup of coffee",
     "excerpt": "Your first card is not extra money, it is a tool for building a file lenders read for a decade. Here is how to use it without paying interest.",
     "money": true,
-    "templateCallout": true
+    "templateCallout": true,
+    "shortAnswer": "Get one no-annual-fee student or secured card, set autopay for the full statement balance, keep the reported balance under 10% of the limit, and never close your first card. Payment history and utilization are 65% of a FICO score, which is why those four habits do most of the work."
   },
   {
     "slug": "first-job-benefits-enrollment",
@@ -35,7 +36,8 @@
     "coverAlt": "Benefits paperwork and enrolment forms beside a pen on a cream desk",
     "excerpt": "Thirty days to make decisions that last a year. What a deductible really costs you, and why the 401(k) match is the raise nobody told you about.",
     "money": true,
-    "templateCallout": false
+    "templateCallout": false,
+    "shortAnswer": "Pick the health plan whose premium plus deductible plus out-of-pocket maximum is lowest for a bad year, not the one with the lowest weekly deduction. Then contribute at least enough to the 401(k) to take the full employer match, and submit the form before the deadline, usually 30 days from your start date."
   },
   {
     "slug": "negotiate-first-job-offer",
@@ -54,7 +56,8 @@
     "coverAlt": "Offer letter, phone and pen on a warm cream desk",
     "excerpt": "Your starting salary is the number every future raise is calculated from. Here is how to ask once, politely, without losing the offer.",
     "money": true,
-    "templateCallout": false
+    "templateCallout": false,
+    "shortAnswer": "Ask once, after the offer exists and before you accept, with one number and one reason. Base salary moves most often, but start date, sign-on bonus, PTO and an early review are frequently easier yeses."
   },
   {
     "slug": "why-it-jobs-are-hard",
@@ -73,7 +76,8 @@
     "coverAlt": "Laptop showing rejection emails beside coffee and resumes on a cream desk",
     "excerpt": "200 applications, four interviews, zero offers. Here is what actually changed in tech hiring, the fake job posts to avoid, and what gets people hired.",
     "money": false,
-    "templateCallout": false
+    "templateCallout": false,
+    "shortAnswer": "Hiring really did tighten, so it is not you. But the application volume is self-inflicted: hundreds of identical applications lose to ten tailored ones with a referral, a portfolio people can click, and a clear answer to what the job actually needs."
   },
   {
     "slug": "budget-first-salary",
@@ -92,7 +96,8 @@
     "coverAlt": "Young woman writing in a budget planner at a bright desk",
     "excerpt": "Your first paycheck is exciting and terrifying at the same time. Here is the exact system to split it, so you can pay your bills and still say yes to brunch.",
     "money": true,
-    "templateCallout": true
+    "templateCallout": true,
+    "shortAnswer": "Budget the money that actually lands in your account, not the salary on the offer letter. Cover your four walls first (rent, food, transport, minimum payments), automate the savings transfer for the day you get paid, then give the rest a job."
   },
   {
     "slug": "money-mistakes",
@@ -111,7 +116,8 @@
     "coverAlt": "Credit card and receipts on a cream table",
     "excerpt": "Everyone makes these. You don't have to. The ten most expensive mistakes from the class that came before you, and the easy fixes.",
     "money": true,
-    "templateCallout": true
+    "templateCallout": true,
+    "shortAnswer": "The expensive ones repeat every year: ignoring your payslip, upgrading your lifestyle the moment the salary lands, credit card balances, no emergency fund, and waiting to invest until you earn more. Each one has a cheap fix if you catch it in the first year."
   },
   {
     "slug": "emergency-fund",
@@ -130,6 +136,7 @@
     "coverAlt": "Glass jar with folded banknotes and a small plant",
     "excerpt": "“Save 3–6 months of expenses” is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
     "money": true,
-    "templateCallout": true
+    "templateCallout": true,
+    "shortAnswer": "Start at $500, then build to one month of essential expenses, then three. Keep it in a separate high-yield savings account, fund it automatically on payday, and spend it only on things that are genuinely unexpected and genuinely urgent."
   }
 ]
