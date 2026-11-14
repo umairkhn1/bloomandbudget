@@ -38,7 +38,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "8"
+CSS_VERSION = "9"
 
 WRITTEN = []
 
@@ -213,6 +213,7 @@ def head(title, desc, path, og_image, page_type="website", jsonld=None,
         f'  <link rel="stylesheet" href="/css/styles.css?v={CSS_VERSION}">',
         '  <link rel="icon" href="/img/favicon/favicon.ico" sizes="any">',
         '  <link rel="icon" href="/img/favicon/favicon-32.png" sizes="32x32" type="image/png">',
+        '  <link rel="icon" href="/img/favicon/favicon-96.png" sizes="96x96" type="image/png">',
         '  <link rel="icon" href="/img/favicon/favicon-192.png" sizes="192x192" type="image/png">',
         '  <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">',
         '  <meta name="google-adsense-account" content="%s">' % SITE["adsenseClient"],
