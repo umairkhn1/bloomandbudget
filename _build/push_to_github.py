@@ -90,7 +90,7 @@ def main():
     print(f"new tree {new_tree['sha'][:10]}  ({len(tree)} entries)")
 
     commit = call("POST", f"{API}/git/commits", {
-        "message": "Serve the peony favicon at the site root too",
+        "message": "Serve favicons from a fresh path so browsers drop the old B",
         "tree": new_tree["sha"],
         "parents": [head_sha],
     })

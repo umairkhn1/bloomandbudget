@@ -38,7 +38,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "9"
+CSS_VERSION = "10"
 
 WRITTEN = []
 
@@ -211,11 +211,11 @@ def head(title, desc, path, og_image, page_type="website", jsonld=None,
         '  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,'
         'wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">',
         f'  <link rel="stylesheet" href="/css/styles.css?v={CSS_VERSION}">',
-        '  <link rel="icon" href="/img/favicon/favicon.ico" sizes="any">',
-        '  <link rel="icon" href="/img/favicon/favicon-32.png" sizes="32x32" type="image/png">',
-        '  <link rel="icon" href="/img/favicon/favicon-96.png" sizes="96x96" type="image/png">',
-        '  <link rel="icon" href="/img/favicon/favicon-192.png" sizes="192x192" type="image/png">',
-        '  <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">',
+        '  <link rel="icon" href="/img/favicon/v2/favicon.ico" sizes="any">',
+        '  <link rel="icon" href="/img/favicon/v2/favicon-32.png" sizes="32x32" type="image/png">',
+        '  <link rel="icon" href="/img/favicon/v2/favicon-96.png" sizes="96x96" type="image/png">',
+        '  <link rel="icon" href="/img/favicon/v2/favicon-192.png" sizes="192x192" type="image/png">',
+        '  <link rel="apple-touch-icon" href="/img/favicon/v2/apple-touch-icon.png">',
         '  <meta name="google-adsense-account" content="%s">' % SITE["adsenseClient"],
         '  <meta name="robots" content="index,follow">',
         analytics_snippet().rstrip("\n"),

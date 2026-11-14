@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parent.parent
 SRC  = ROOT / "img" / "brand-src" / "peony.png"
 OUT  = ROOT / "img" / "brand"
-FAV  = ROOT / "img" / "favicon"
+FAV  = ROOT / "img" / "favicon" / "v2"   # v2 = new path, busts the 1-year immutable cache
 
 SAGE  = (111, 139, 122)
 CREAM = (250, 246, 240)
