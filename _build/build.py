@@ -285,6 +285,8 @@ def grid_class(posts):
     n = len(posts)
     if n == 1:
         return "post-grid post-grid--single"
+    if n == 2:
+        return "post-grid post-grid--two"
     if n % 3 == 1 and n % 2 == 0:
         return "post-grid post-grid--two"
     return "post-grid"
@@ -558,8 +560,9 @@ def build_post(post):
 
 
 def build_index():
-    money = [p for p in POSTS if p["money"]]
-    career = [p for p in POSTS if not p["money"]]
+    money_cats = {"budgeting", "saving", "mistakes"}
+    money = [p for p in POSTS if p["categorySlug"] in money_cats]
+    career = [p for p in POSTS if p["categorySlug"] not in money_cats]
     avg_read = int(round(sum(p["_read"] for p in POSTS) / len(POSTS)))
     total_posts = len(POSTS)
 
@@ -608,8 +611,8 @@ def build_index():
           <p>Made for first salaries, first budgets, and first &ldquo;wait, is this&hellip; mine?&rdquo; moments.</p>
         </div>
 
-        <div class="post-grid">
-{post_grid(money)}
+        <div class="{grid_class(money[:3])}">
+{post_grid(money[:3])}
         </div>
       </div>
     </section>
