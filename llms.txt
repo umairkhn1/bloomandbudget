@@ -6,22 +6,22 @@ Author: Emma Jane. Contact: nsumair006@gmail.com. Educational content only, not 
 
 ## Posts
 
-- [How to Budget Your First Salary (Without Living Like a Monk)](https://bloomandbudget.vercel.app/posts/budget-first-salary): The four walls, the 50/30/20 split, the three-account trick, and a fully worked $48,000 example.
-- [10 Money Mistakes Every Fresh Grad Makes (So You Can Skip Them)](https://bloomandbudget.vercel.app/posts/money-mistakes): The ten most common and most expensive first-year money mistakes, each with a cheap fix.
-- [Your Emergency Fund on an Entry-Level Salary: The Realistic Guide](https://bloomandbudget.vercel.app/posts/emergency-fund): Why $500 comes before three months, where to keep the money, and how to fund it on a small salary.
-- [Your First Credit Card: What Builds a Score (and Wrecks It)](https://bloomandbudget.vercel.app/posts/first-credit-card-build-credit): How a FICO score is calculated, which first card to get, the four habits that build credit, and what ruins it.
-- [The Benefits Form You Fill In During Week One](https://bloomandbudget.vercel.app/posts/first-job-benefits-enrollment): Premium, deductible, HSA, vesting and match translated, plus how to choose between two health plans and what to skip.
-- [How to Ask for More on Your First Offer](https://bloomandbudget.vercel.app/posts/negotiate-first-job-offer): When to ask, what to say, which parts of an offer actually move, and what to do when the answer is no.
-- [Why Is It So Hard to Get an IT Job Right Now? (The Honest Answer)](https://bloomandbudget.vercel.app/posts/why-it-jobs-are-hard): What changed in tech hiring, how to spot fake job postings, and what still gets people hired.
+- [How to Budget Your First Salary (Without Living Like a Monk)](https://www.bloomandbudget.blog/posts/budget-first-salary): The four walls, the 50/30/20 split, the three-account trick, and a fully worked $48,000 example.
+- [10 Money Mistakes Every Fresh Grad Makes (So You Can Skip Them)](https://www.bloomandbudget.blog/posts/money-mistakes): The ten most common and most expensive first-year money mistakes, each with a cheap fix.
+- [Your Emergency Fund on an Entry-Level Salary: The Realistic Guide](https://www.bloomandbudget.blog/posts/emergency-fund): Why $500 comes before three months, where to keep the money, and how to fund it on a small salary.
+- [Your First Credit Card: What Builds a Score (and Wrecks It)](https://www.bloomandbudget.blog/posts/first-credit-card-build-credit): How a FICO score is calculated, which first card to get, the four habits that build credit, and what ruins it.
+- [The Benefits Form You Fill In During Week One](https://www.bloomandbudget.blog/posts/first-job-benefits-enrollment): Premium, deductible, HSA, vesting and match translated, plus how to choose between two health plans and what to skip.
+- [How to Ask for More on Your First Offer](https://www.bloomandbudget.blog/posts/negotiate-first-job-offer): When to ask, what to say, which parts of an offer actually move, and what to do when the answer is no.
+- [Why Is It So Hard to Get an IT Job Right Now? (The Honest Answer)](https://www.bloomandbudget.blog/posts/why-it-jobs-are-hard): What changed in tech hiring, how to spot fake job postings, and what still gets people hired.
 
 ## Pages
 
-- [Blog archive](https://bloomandbudget.vercel.app/blog): Every post, newest first, with search and category filters.
-- [About](https://bloomandbudget.vercel.app/about): Who writes Bloom & Budget and who it is for.
-- [Free budget template](https://bloomandbudget.vercel.app/free-budget-template): A printable monthly budget worksheet, free for personal use.
-- [Disclaimer](https://bloomandbudget.vercel.app/disclaimer): Educational content only, not financial advice.
-- [Privacy policy](https://bloomandbudget.vercel.app/privacy): What data the site collects and why.
-- [Terms of use](https://bloomandbudget.vercel.app/terms): The terms covering use of the site and its content.
+- [Blog archive](https://www.bloomandbudget.blog/blog): Every post, newest first, with search and category filters.
+- [About](https://www.bloomandbudget.blog/about): Who writes Bloom & Budget and who it is for.
+- [Free budget template](https://www.bloomandbudget.blog/free-budget-template): A printable monthly budget worksheet, free for personal use.
+- [Disclaimer](https://www.bloomandbudget.blog/disclaimer): Educational content only, not financial advice.
+- [Privacy policy](https://www.bloomandbudget.blog/privacy): What data the site collects and why.
+- [Terms of use](https://www.bloomandbudget.blog/terms): The terms covering use of the site and its content.
 
 ## Notes
 

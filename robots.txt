@@ -44,4 +44,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://bloomandbudget.vercel.app/sitemap.xml
+Sitemap: https://www.bloomandbudget.blog/sitemap.xml
