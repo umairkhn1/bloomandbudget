@@ -135,6 +135,14 @@
     {
       "source": "/blog/BingSiteAuth.xml",
       "destination": "/BingSiteAuth.xml"
+    },
+    {
+      "source": "/blog/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/blog/robots.txt",
+      "destination": "/robots.txt"
     }
   ]
 }
