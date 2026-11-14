@@ -130,5 +130,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog/BingSiteAuth.xml",
+      "destination": "/BingSiteAuth.xml"
+    }
   ]
 }
