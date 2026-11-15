@@ -5,7 +5,8 @@
     "blurb": "The plan for the money you already earn, before it disappears.",
     "intro": "Budgets get sold as restriction. They work better as permission: this much for rent, this much for saving, this much to spend without checking the balance first. Everything in this category is the version that survives a real first salary.",
     "seoTitle": "Budgeting Posts for Your First Salary",
-    "meta": "Budgeting guides for your first salary: how to split a paycheck, automate savings and keep a life you actually enjoy. No shame, no spreadsheets you'll abandon."
+    "meta": "Budgeting guides for your first salary: split a paycheck, automate saving, and keep a life you enjoy. No shame, no abandoned spreadsheets.",
+    "body": "<section class=\"section\" style=\"padding-top:0\">\n        <div class=\"container\">\n          <h2>Where to start with budgeting</h2>\n          <p>If you only read one thing here, read the paycheck split: four walls first, then an automatic transfer, then permission money. It is the order that makes everything else possible, and the whole setup takes about twenty minutes.</p>\n          <p>Most budgeting advice assumes a stable income and a spreadsheet habit. Yours probably has neither yet. So these posts are built around decisions you make once: what counts as a wall, which account the savings live in, and what happens in a month that goes wrong. Percentages come second.</p>\n          <h3>Two rules that survive a bad month</h3>\n          <ul>\n            <li>Automate the saving the day after payday, so it stops being a monthly decision.</li>\n            <li>When the spending account hits zero, wait. Never borrow from the walls.</li>\n          </ul>\n          <p>Start with <a href=\"/posts/budget-first-salary\">how to budget your first salary</a>, then run the real numbers on leaving home in <a href=\"/posts/first-apartment-cost\">what moving out actually costs</a>.</p>\n        </div>\n      </section>"
   },
   {
     "name": "Saving",
@@ -13,7 +14,8 @@
     "blurb": "Building a cushion so a bad week doesn't become a bad year.",
     "intro": "Saving on an entry-level salary is not about willpower, it is about removing the decision. These posts are about the cushion: what to build, how much, and what to do when the numbers feel too small to matter.",
     "seoTitle": "Saving Guides for Entry-Level Salaries",
-    "meta": "Realistic saving guides for entry-level salaries: how to build an emergency fund, automate transfers and keep going when rent eats half your paycheck."
+    "meta": "Realistic saving guides for entry-level salaries: how to build an emergency fund, automate transfers and keep going when rent eats half your paycheck.",
+    "body": "<section class=\"section\" style=\"padding-top:0\">\n        <div class=\"container\">\n          <h2>How to build a cushion on a small salary</h2>\n          <p>\"Three to six months of expenses\" is the standard advice and it is useless in month one, when the real choice is between $200 and nothing. Start at $500, then one month of essentials, then three. Each of those is a milestone you can actually picture.</p>\n          <p>The mechanics matter more than the amount: a separate account, a transfer the day after payday, and one rule that the money is only for things that are genuinely unexpected and genuinely urgent. A sale is neither, and neither is a wedding you knew about for six months.</p>\n          <h3>When rent eats half your paycheck</h3>\n          <p>You are not failing at saving, you are saving at the hardest possible starting point. Aim for the smallest amount you will not cancel in March, and let it run while you work on the bigger levers: rent, the commute, and the income itself.</p>\n          <p>Start with <a href=\"/posts/emergency-fund\">the realistic emergency fund plan</a>.</p>\n        </div>\n      </section>"
   },
   {
     "name": "Mistakes",
@@ -21,14 +23,16 @@
     "blurb": "The expensive lessons someone else already paid for.",
     "intro": "Nobody hands you a manual for the first year of real money, so most people learn by paying for it. This category is the shortcuts: the mistakes that cost the most, why they happen, and the small fix that undoes most of the damage.",
     "seoTitle": "Money Mistakes to Skip in Your Twenties",
-    "meta": "The money mistakes new grads make most often, what each one costs over a year, and the simple fix for each. Learn them from someone else's receipts."
+    "meta": "The money mistakes new grads make most often, what each one costs over a year, and the simple fix for each. Learn them from someone else's receipts.",
+    "body": "<section class=\"section\" style=\"padding-top:0\">\n        <div class=\"container\">\n          <h2>The mistakes worth reading about before you make them</h2>\n          <p>Most of these cost money quietly. A subscription that renews for a year. A card balance that only ever gets the minimum. A buy-now-pay-later plan that turns one $90 purchase into four separate decisions. None of them feel like a mistake at the time, which is exactly why they live on this shelf.</p>\n          <p>Every post here names the cost over twelve months rather than the sticker price, then gives you the fix in the order that protects your savings and your credit score first. Where there is a version that costs nothing, that version comes first.</p>\n          <h3>If you only fix one thing</h3>\n          <p>Cover the minimums, then make the savings automatic, then worry about the rest. Getting that order wrong is the single most expensive habit in your early twenties, and it is fixable in about ten minutes inside your banking app.</p>\n          <p>Start with <a href=\"/posts/money-mistakes\">the ten mistakes almost everyone makes</a>.</p>\n        </div>\n      </section>"
   },
   {
     "name": "Career",
     "slug": "career",
     "blurb": "The job hunt, the offer and the money behind both.",
     "intro": "Your salary is the biggest number in your budget, so the job is part of the money conversation. This is the shelf for getting hired, reading an offer properly and making the next move count.",
-    "seoTitle": "Career and Job-Hunt Posts",
-    "meta": "Honest career advice for people in their first job: what changed in hiring, the job posts to avoid, and what actually gets you an offer."
+    "seoTitle": "Career: Offers, Benefits and the Job Hunt",
+    "meta": "Honest career advice for people in their first job: what changed in hiring, the job posts to avoid, and what actually gets you an offer.",
+    "body": "<section class=\"section\" style=\"padding-top:0\">\n        <div class=\"container\">\n          <h2>How the job fits into the budget</h2>\n          <p>Your salary is the biggest line in any budget, so negotiating it once beats trimming coffee for a year. These posts cover the parts nobody explains at orientation: what a benefits form actually commits you to, how to counter an offer without losing it, and what hiring really looks like in a market that changed fast.</p>\n          <p>If a new job is close, read them in this order: the offer first, then the benefits form you fill in during week one, then the honest version of what is happening in the market. Each one changes a number that lands in your account every month.</p>\n          <p>Start with <a href=\"/posts/negotiate-first-job-offer\">how to ask for more on your first offer</a>.</p>\n        </div>\n      </section>"
   }
 ]

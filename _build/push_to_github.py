@@ -90,7 +90,7 @@ def main():
     print(f"new tree {new_tree['sha'][:10]}  ({len(tree)} entries)")
 
     commit = call("POST", f"{API}/git/commits", {
-        "message": "Add CSP, X-Frame-Options and Permissions-Policy headers",
+        "message": "Fix crawl opportunities: metas, titles, thin category pages, image weight",
         "tree": new_tree["sha"],
         "parents": [head_sha],
     })
@@ -103,13 +103,16 @@ def main():
     })
     print("branch updated")
 
-    # verify against the real remote
-    check = call("GET", f"{API}/git/ref/heads/{BRANCH}")
-    ok = check["object"]["sha"] == commit["sha"]
-    print(f"verify: remote head is {check['object']['sha'][:10]} -> "
-          f"{'MATCH' if ok else 'MISMATCH'}")
-    if not ok:
-        sys.exit(1)
+    # verify against the real remote (GitHub's read can lag a second or two)
+    import time
+    for attempt in range(6):
+        check = call("GET", f"{API}/git/ref/heads/{BRANCH}")
+        if check["object"]["sha"] == commit["sha"]:
+            print(f"verify: remote head is {check['object']['sha'][:10]} -> MATCH")
+            return
+        time.sleep(2)
+    print(f"verify: remote head is {check['object']['sha'][:10]} -> MISMATCH")
+    sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -821,7 +821,9 @@ def build_category(cat):
         </div>
         <p class="back-to-blog"><a href="/blog">&larr; Back to all posts</a></p>
       </div>
-    </section>"""
+    </section>
+
+{cat.get("body", "")}"""
 
     meta = {
         "title": cat["seoTitle"],
@@ -878,7 +880,7 @@ LEGAL_PAGES = {
         "og": "/img/og/disclaimer.jpg",
     },
     "terms": {
-        "title": "Terms of Use",
+        "title": "Terms of Use: The Rules for Using This Site",
         "desc": "The simple terms for using Bloom & Budget: what you may share, what you may not copy, and the limits of what this site promises.",
         "h1": "Terms of Use",
         "og": "/img/og/terms.jpg",
