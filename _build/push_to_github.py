@@ -90,7 +90,7 @@ def main():
     print(f"new tree {new_tree['sha'][:10]}  ({len(tree)} entries)")
 
     commit = call("POST", f"{API}/git/commits", {
-        "message": "Add Pinterest domain verification meta tag",
+        "message": "Add CSP, X-Frame-Options and Permissions-Policy headers",
         "tree": new_tree["sha"],
         "parents": [head_sha],
     })
