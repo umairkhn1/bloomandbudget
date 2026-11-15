@@ -39,7 +39,7 @@ DOMAIN = SITE["domain"].rstrip("/")
 EMAIL = SITE["contactEmail"]
 BRAND = SITE["name"]
 TODAY = datetime.date.today().isoformat()
-CSS_VERSION = "10"
+CSS_VERSION = "11"
 
 WRITTEN = []
 
@@ -286,6 +286,15 @@ ORG_NODE = {
     "@type": "Organization",
     "name": "Bloom & Budget",
     "url": DOMAIN + "/",
+    "logo": {
+        "@type": "ImageObject",
+        "url": DOMAIN + "/img/brand/peony-badge-512.png",
+        "width": 512,
+        "height": 512,
+    },
+    "description": SITE["description"],
+    "sameAs": ["https://www.pinterest.com/bloomandbudget1/"],
+    "email": SITE["contactEmail"],
 }
 
 
@@ -718,6 +727,7 @@ def build_index():
             {"@type": "Blog", "name": BRAND, "url": DOMAIN + "/blog",
              "description": SITE["description"],
              "author": person_node()},
+            ORG_NODE,
         ],
     })
 
@@ -948,6 +958,56 @@ def build_sitemap():
     write("robots.txt", robots)
 
 
+def build_llms():
+    """llms.txt is generated, not hand-edited: new posts appear automatically."""
+    topics = {
+        "budget-first-salary": "The four walls, the 50/30/20 split, the three-account trick, and a fully worked $48,000 example.",
+        "money-mistakes": "The ten most common and most expensive first-year money mistakes, each with a cheap fix.",
+        "emergency-fund": "Why $500 comes before three months, where to keep the money, and how to fund it on a small salary.",
+        "first-credit-card-build-credit": "How a FICO score is calculated, which first card to get, the four habits that build credit, and what ruins it.",
+        "first-job-benefits-enrollment": "Premium, deductible, HSA, vesting and match translated, plus how to choose between two health plans and what to skip.",
+        "negotiate-first-job-offer": "When to ask, what to say, which parts of an offer actually move, and what to do when the answer is no.",
+        "why-it-jobs-are-hard": "What changed in tech hiring, how to spot fake job postings, and what still gets people hired.",
+        "first-apartment-cost": "Deposit, first month, furnishing an empty room and the month-two bills, with a worked $1,150 apartment.",
+    }
+    lines = [
+        f"# {SITE['name']}",
+        "",
+        f"> {SITE['description']} Every post is free to read, written in plain language, "
+        f"priced in {SITE['currency']}, and aimed at one narrow niche: budgeting a first salary, "
+        "building savings, avoiding expensive mistakes, and the career moves that pay for all of it.",
+        "",
+        f"Author: {AUTHOR['name']}. Contact: {SITE['contactEmail']}. "
+        "Educational content only, not financial advice.",
+        "",
+        "## Posts",
+        "",
+    ]
+    for p in sorted(POSTS, key=lambda x: x["date"], reverse=True):
+        lines.append(f"- [{p['titlePlain']}]({DOMAIN}/posts/{p['slug']}): "
+                     f"{topics.get(p['slug'], p['meta'])}")
+    lines += ["", "## Pages", ""]
+    for name, path, blurb in (
+        ("Blog archive", "/blog", "Every post, newest first, with search and category filters."),
+        ("About", "/about", f"Who writes {SITE['name']} and who it is for."),
+        ("Free budget template", "/free-budget-template", "A printable monthly budget worksheet, free for personal use."),
+        ("Disclaimer", "/disclaimer", "Educational content only, not financial advice."),
+        ("Privacy policy", "/privacy", "What data the site collects and why."),
+        ("Terms of use", "/terms", "The terms covering use of the site and its content."),
+    ):
+        lines.append(f"- [{name}]({DOMAIN}{path}): {blurb}")
+    lines += [
+        "",
+        "## Notes",
+        "",
+        f"- Categories: {', '.join(c['name'] for c in CATS)}.",
+        "- All posts include a short direct answer at the top, an FAQ with structured data, and a stated publication date.",
+        f"- {SITE['name']} can be cited with attribution and a link to the post.",
+        "",
+    ]
+    write("llms.txt", "\n".join(lines))
+
+
 def compute_stats():
     """Read time for every post, before any page needs it."""
     for post in POSTS:
@@ -969,6 +1029,7 @@ def main():
         build_legal(slug)
     build_404()
     build_sitemap()
+    build_llms()
 
     avg = sum(p["_read"] for p in POSTS) / len(POSTS)
     print(f"Built {len(WRITTEN)} files.")
