@@ -15,6 +15,7 @@ Run:    python3 _build/build.py
 """
 
 import json
+import os
 import re
 import html
 import html as html_lib
@@ -192,6 +193,9 @@ def head(title, desc, path, og_image, page_type="website", jsonld=None,
         f'  <link rel="canonical" href="{canonical}">',
         (f'  <meta name="msvalidate.01" content="{bing_token}">'
          if (bing_token := SITE.get("verification", {}).get("bing")) else None),
+        (f'  <meta name="p:domain_verify" content="{pin_token}">'
+         if (pin_token := (os.environ.get("PINTEREST_DOMAIN_VERIFICATION_TOKEN")
+                           or SITE.get("verification", {}).get("pinterest"))) else None),
         f'  <meta name="theme-color" content="#faf6f0">',
         f'  <meta property="og:site_name" content="{esc(BRAND)}">',
         f'  <meta property="og:type" content="{page_type}">',
