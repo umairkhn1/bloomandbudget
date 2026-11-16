@@ -158,5 +158,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Expect three to four months of rent in cash before you sleep there: deposit, first month, application fee, utility deposits and roughly $550 to $1,380 to set up an empty room. On a $1,150 apartment that is about $2,900 at the barest level and $3,700 with normal furniture."
+  },
+  {
+    "slug": "first-paycheck-deductions",
+    "title": "Why Your First Paycheck Is Smaller<br>Than Your Salary",
+    "titlePlain": "Why Your First Paycheck Is Smaller Than Your Salary",
+    "seoTitle": "Why Your First Paycheck Is Smaller Than Your Salary",
+    "meta": "Gross pay, net pay, and where the difference goes: every tax and deduction on your first paycheck, with a worked $48,000 example and how to read a stub.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-16",
+    "cover": "/img/cover-paycheck.webp",
+    "coverFallback": "/img/cover-paycheck.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Envelope, pay stub, calculator and black coffee on a cream linen surface",
+    "excerpt": "Your salary is $48,000 and your paycheck is $3,129. Here is every line between those two numbers, and which ones you can change.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "Roughly 22% of a first salary goes before it reaches you: federal income tax, 6.2% Social Security, 1.45% Medicare, state tax, plus any health premium and retirement contributions you chose. Budget on net pay, not gross, and expect the first check to be prorated if you started mid-cycle."
   }
 ]
