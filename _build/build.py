@@ -970,6 +970,7 @@ def build_llms():
         "why-it-jobs-are-hard": "What changed in tech hiring, how to spot fake job postings, and what still gets people hired.",
         "first-apartment-cost": "Deposit, first month, furnishing an empty room and the month-two bills, with a worked $1,150 apartment.",
         "first-paycheck-deductions": "Every tax and deduction between gross and net pay, why the first check is prorated, and how to read a pay stub.",
+        "balcony-setup-cost": "A renter's balcony from $0 to $362, line by line, plus the lease rules and what survives weather.",
     }
     lines = [
         f"# {SITE['name']}",

@@ -178,5 +178,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Roughly 22% of a first salary goes before it reaches you: federal income tax, 6.2% Social Security, 1.45% Medicare, state tax, plus any health premium and retirement contributions you chose. Budget on net pay, not gross, and expect the first check to be prorated if you started mid-cycle."
+  },
+  {
+    "slug": "balcony-setup-cost",
+    "title": "What a Renter's Balcony Actually<br>Costs to Set Up",
+    "titlePlain": "What a Renter's Balcony Actually Costs to Set Up",
+    "seoTitle": "What a Renter's Balcony Actually Costs to Set Up",
+    "meta": "A renter's balcony from $0 to $362, line by line: what to buy, what the lease forbids, what survives weather, and what never to finance.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-18",
+    "cover": "/img/cover-balcony.webp",
+    "coverFallback": "/img/cover-balcony.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Small rented balcony with bistro chairs, terracotta planters and warm string lights at golden hour",
+    "excerpt": "The balcony is the cheapest room you own and the easiest one to overspend on. Three real versions, with the line items and the lease rules that protect your deposit.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "A balcony costs $0 to $362 depending on patience. The realistic middle is about $152: a secondhand bistro set, two planters, two plants, warm string lights and a mat. Buy in that order, check the lease for mounting and grill rules first, and never finance outdoor furniture."
   }
 ]
