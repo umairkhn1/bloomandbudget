@@ -198,5 +198,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "A balcony costs $0 to $362 depending on patience. The realistic middle is about $152: a secondhand bistro set, two planters, two plants, warm string lights and a mat. Buy in that order, check the lease for mounting and grill rules first, and never finance outdoor furniture."
+  },
+  {
+    "slug": "gaming-budget",
+    "title": "How to Afford the Games You Want<br>Without Wrecking Your Month",
+    "titlePlain": "How to Afford the Games You Want Without Wrecking Your Month",
+    "seoTitle": "Gaming on a Budget: Afford Games Without Debt",
+    "meta": "An $80 game is 14% of a month's fun money. A realistic gaming budget: the real cost of a release, when to wait, and how to stop impulse buying.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-19",
+    "cover": "/img/cover-gaming.webp",
+    "coverFallback": "/img/cover-gaming.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Game controller, notebook and coffee on a cream linen surface",
+    "excerpt": "A new game is $80, which is 14 percent of your fun money. Here's the gaming budget that lets you buy it without rearranging the month.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "Keep games as their own line in fun money, around $20 to $40 a month. Nothing over a third of that money, wait 30 days on anything over $40, and never finance a game or a console. Launch week is the worst value: most single-player releases drop in price within six to twelve weeks."
   }
 ]

@@ -976,6 +976,7 @@ def build_llms():
         "first-apartment-cost": "Deposit, first month, furnishing an empty room and the month-two bills, with a worked $1,150 apartment.",
         "first-paycheck-deductions": "Every tax and deduction between gross and net pay, why the first check is prorated, and how to read a pay stub.",
         "balcony-setup-cost": "A renter's balcony from $0 to $362, line by line, plus the lease rules and what survives weather.",
+        "gaming-budget": "How to afford games without debt: the real cost of a release, when launch week is bad value, and a monthly games number.",
     }
     lines = [
         f"# {SITE['name']}",
