@@ -896,9 +896,9 @@ LEGAL_PAGES = {
         "og": "/img/og/terms.jpg",
     },
     "free-budget-template": {
-        "title": "Free Printable Monthly Budget Template (PDF)",
-        "desc": "A one-page monthly budget worksheet you can print and fill in by hand. Free, no email required, nothing to install. Built for a first salary.",
-        "h1": "The free monthly budget template",
+        "title": "Free Budget Planner: Printable One-Page PDF (No Email)",
+        "desc": "A free budget planner you print and fill in by hand. One page, no email, no app, no formulas to break. Built for a first salary and a ten-minute setup.",
+        "h1": "A free budget planner you'll actually fill in",
         "og": "/img/og/free-budget-template.jpg",
     },
 }
@@ -913,6 +913,11 @@ def build_legal(slug):
         "path": f"/{slug}",
         "og": cfgp["og"],
     }
+    faq_pairs = extract_faq(body)
+    if faq_pairs:
+        meta["jsonld"] = jsonld_script(
+            {"@context": "https://schema.org",
+             **faq_node(faq_pairs, DOMAIN + f"/{slug}")})
     write(f"{slug}.html", page_shell(meta, body))
 
 
