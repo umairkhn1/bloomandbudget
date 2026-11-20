@@ -121,10 +121,10 @@
   },
   {
     "slug": "emergency-fund",
-    "title": "Your Emergency Fund on an Entry-Level Salary:<br>The Realistic Guide",
-    "titlePlain": "Your Emergency Fund on an Entry-Level Salary: The Realistic Guide",
-    "seoTitle": "Your Emergency Fund on an Entry-Level Salary",
-    "meta": "How to build an emergency fund when rent eats half your paycheck. A realistic monthly plan with real numbers, a worked example and an FAQ.",
+    "title": "How to Build an Emergency Fund<br>From Zero",
+    "titlePlain": "How to Build an Emergency Fund From Zero",
+    "seoTitle": "How to Build an Emergency Fund From Zero",
+    "meta": "Starting from $0? The 90-day plan to a $500 buffer on a first salary: what to open, where the first $500 comes from, and what counts as an emergency.",
     "category": "Saving",
     "categorySlug": "saving",
     "tag": "Saving",
@@ -137,7 +137,8 @@
     "excerpt": "\u201cSave 3\u20136 months of expenses\u201d is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
     "money": true,
     "templateCallout": true,
-    "shortAnswer": "Start at $500, then build to one month of essential expenses, then three. Keep it in a separate high-yield savings account, fund it automatically on payday, and spend it only on things that are genuinely unexpected and genuinely urgent."
+    "shortAnswer": "Start at $500, then build to one month of essential expenses, then three. Keep it in a separate high-yield savings account, fund it automatically on payday, and spend it only on things that are genuinely unexpected and genuinely urgent.",
+    "updated": "2026-11-20"
   },
   {
     "slug": "first-apartment-cost",

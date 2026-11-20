@@ -90,7 +90,7 @@ def main():
     print(f"new tree {new_tree['sha'][:10]}  ({len(tree)} entries)")
 
     commit = call("POST", f"{API}/git/commits", {
-        "message": "Name the launch in the gaming budget post",
+        "message": "Rebuild emergency fund post around the from-zero angle",
         "tree": new_tree["sha"],
         "parents": [head_sha],
     })

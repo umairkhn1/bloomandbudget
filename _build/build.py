@@ -325,7 +325,7 @@ def post_card(post):
               <span class="tag">{esc(post['tag'])}</span>
               <h3><a href="/posts/{post['slug']}">{esc(post['titlePlain'])}</a></h3>
               <p class="excerpt">{esc(post['excerpt'])}</p>
-              <div class="meta"><span>{fmt_date(post['date'])}</span><span>{post['_read']} min read</span></div>
+              <div class="meta"><span>{fmt_date(post['date'])}</span><span>{post['_read']} min read</span>{f"<span>Updated {fmt_date(post['updated'])}</span>" if post.get('updated') else ""}</div>
             </div>
           </article>"""
 
@@ -565,6 +565,7 @@ def build_post(post):
           <span>{fmt_date(post['date'])}</span><span>·</span>
           <span>{post['_read']} min read</span><span>·</span>
           <span>by <a href="/about" rel="author">{esc(AUTHOR['name'])}</a></span>
+          {f"<span>·</span><span>Updated {fmt_date(post['updated'])}</span>" if post.get('updated') else ""}
         </div>
 {disclaimer}
       </div>
@@ -941,7 +942,8 @@ def build_sitemap():
     urls += [("/" + s, TODAY, "0.6", "monthly") for s in LEGAL_PAGES]
     urls += [("/blog", TODAY, "0.9", "weekly"), ("/about", TODAY, "0.8", "monthly")]
     urls += [(f"/{c['slug']}", TODAY, "0.7", "weekly") for c in CATS]
-    urls += [(f"/posts/{p['slug']}", p["date"], "0.8", "monthly") for p in POSTS]
+    urls += [(f"/posts/{p['slug']}", p.get("updated") or p["date"], "0.8", "monthly")
+             for p in POSTS]
     entries = "\n".join(
         f'  <url><loc>{DOMAIN}{loc}</loc><lastmod>{mod}</lastmod>'
         f'<changefreq>{freq}</changefreq><priority>{prio}</priority></url>'
