@@ -134,7 +134,7 @@
     "coverWidth": 1200,
     "coverHeight": 750,
     "coverAlt": "Glass jar with folded banknotes and a small plant",
-    "excerpt": "\u201cSave 3\u20136 months of expenses\u201d is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
+    "excerpt": "“Save 3–6 months of expenses” is cute advice when rent eats half your paycheck. Here is the version that actually works on a starter salary.",
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Start at $500, then build to one month of essential expenses, then three. Keep it in a separate high-yield savings account, fund it automatically on payday, and spend it only on things that are genuinely unexpected and genuinely urgent.",
@@ -219,5 +219,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Keep games as their own line in fun money, around $20 to $40 a month. Nothing over a third of that money, wait 30 days on anything over $40, and never finance a game or a console. Launch week is the worst value: most single-player releases drop in price within six to twelve weeks."
+  },
+  {
+    "slug": "expenses-to-cut",
+    "title": "10 Expenses You Can Cut<br>Without Ruining Your Lifestyle",
+    "titlePlain": "10 Expenses You Can Cut Without Ruining Your Lifestyle",
+    "seoTitle": "10 Expenses to Cut Without Ruining Your Life",
+    "meta": "Ten expenses to cut that cost you nothing you can feel: forgotten subscriptions, fees, delivery and unnegotiated bills, worth $150 to $250 a month.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-21",
+    "cover": "/img/cover-expenses.webp",
+    "coverFallback": "/img/cover-expenses.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Cream linen desk with receipts, scissors, a notebook and a mug of coffee",
+    "excerpt": "Most expense cuts fail because they take something you enjoy. These ten take back money you were paying without noticing, worth $150 to $250 a month.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "Cut the expenses you pay without noticing, not the ones you enjoy: forgotten subscriptions, delivery fees, an unnegotiated phone bill, wasted groceries, an unused gym, bank fees, card interest, convenience premiums, annual upgrades and default social spending. On a first salary those are typically worth $150 to $250 a month, and none of them change what your week feels like."
   }
 ]

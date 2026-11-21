@@ -979,6 +979,7 @@ def build_llms():
         "first-paycheck-deductions": "Every tax and deduction between gross and net pay, why the first check is prorated, and how to read a pay stub.",
         "balcony-setup-cost": "A renter's balcony from $0 to $362, line by line, plus the lease rules and what survives weather.",
         "gaming-budget": "How to afford games without debt: the real cost of a release, when launch week is bad value, and a monthly games number.",
+        "expenses-to-cut": "Ten expense cuts that cost you nothing you can feel, with typical US amounts and what each one gives up.",
     }
     lines = [
         f"# {SITE['name']}",
