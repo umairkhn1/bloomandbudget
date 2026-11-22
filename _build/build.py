@@ -980,6 +980,7 @@ def build_llms():
         "balcony-setup-cost": "A renter's balcony from $0 to $362, line by line, plus the lease rules and what survives weather.",
         "gaming-budget": "How to afford games without debt: the real cost of a release, when launch week is bad value, and a monthly games number.",
         "expenses-to-cut": "Ten expense cuts that cost you nothing you can feel, with typical US amounts and what each one gives up.",
+        "saving-on-low-salary": "How to save when the salary is tight: why percentages fail, the $25 that survives, a $500 floor, and the four cuts worth $60 to $150 a month.",
     }
     lines = [
         f"# {SITE['name']}",

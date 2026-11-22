@@ -239,5 +239,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Cut the expenses you pay without noticing, not the ones you enjoy: forgotten subscriptions, delivery fees, an unnegotiated phone bill, wasted groceries, an unused gym, bank fees, card interest, convenience premiums, annual upgrades and default social spending. On a first salary those are typically worth $150 to $250 a month, and none of them change what your week feels like."
+  },
+  {
+    "slug": "saving-on-low-salary",
+    "title": "How to Start Saving Money<br>When Your Salary Is Low",
+    "titlePlain": "How to Start Saving Money When Your Salary Is Low",
+    "seoTitle": "How to Save Money on a Low Salary (That Sticks)",
+    "meta": "How to start saving money when your salary is low: the $25 that sticks, four cuts worth $60 to $150 a month, and why percentages fail you.",
+    "category": "Saving",
+    "categorySlug": "saving",
+    "tag": "Saving",
+    "date": "2026-11-22",
+    "cover": "/img/cover-low-salary.webp",
+    "coverFallback": "/img/cover-low-salary.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Cream linen desk with a glass jar of folded bills, coins, a notepad and a mug of coffee",
+    "excerpt": "Saving on a low salary is arithmetic, not willpower. Start with the $25 that survives March, free up $60 to $150 without touching your life, and stop waiting for the end of the month.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "Save a small fixed amount, not a percentage: $25 taken automatically the day after payday beats $80 you meant to move later. Build a $500 floor before anything else, free up money with the cuts you will not feel (renewals, the phone bill, card interest, delivery fees), and treat a bigger income or lower fixed costs as the real lever."
   }
 ]
