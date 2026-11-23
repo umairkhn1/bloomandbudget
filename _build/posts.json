@@ -259,5 +259,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "Save a small fixed amount, not a percentage: $25 taken automatically the day after payday beats $80 you meant to move later. Build a $500 floor before anything else, free up money with the cuts you will not feel (renewals, the phone bill, card interest, delivery fees), and treat a bigger income or lower fixed costs as the real lever."
+  },
+  {
+    "slug": "50-30-20-rule",
+    "title": "50/30/20 Budget Rule:<br>A Beginner's Guide",
+    "titlePlain": "50/30/20 Budget Rule: A Beginner's Guide",
+    "seoTitle": "50/30/20 Budget Rule: A Beginner's Guide",
+    "meta": "The 50/30/20 rule for beginners: what belongs in each bucket, the split on a $48,000 salary, and what to do when rent breaks the 50%.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-23",
+    "cover": "/img/cover-50-30-20.webp",
+    "coverFallback": "/img/cover-50-30-20.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Cream linen desk with three glass jars of folded bills, a notebook and a mug of coffee",
+    "excerpt": "The 50/30/20 rule is three numbers and one honest catch: rent rarely leaves room for the 50%. Here is the version that survives a real salary.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "The 50/30/20 rule splits your take-home pay into 50% needs, 30% wants and 20% saving and debt payoff. Run it on what lands in your account, not your salary. If rent pushes needs past 50%, which is normal on a first salary, use 60/20/20 or 70/20/10 and protect the savings percentage instead of the fun one."
   }
 ]
