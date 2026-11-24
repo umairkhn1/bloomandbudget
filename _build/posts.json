@@ -279,5 +279,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "The 50/30/20 rule splits your take-home pay into 50% needs, 30% wants and 20% saving and debt payoff. Run it on what lands in your account, not your salary. If rent pushes needs past 50%, which is normal on a first salary, use 60/20/20 or 70/20/10 and protect the savings percentage instead of the fun one."
+  },
+  {
+    "slug": "first-job-application-mistakes",
+    "title": "7 Mistakes to Avoid<br>When Applying for Your First Job",
+    "titlePlain": "7 Mistakes to Avoid When Applying for Your First Job",
+    "seoTitle": "7 First Job Application Mistakes That Cost You Money",
+    "meta": "Seven first job application mistakes that quietly cost you interviews and salary, what each one is worth in dollars, and the one-line fix for each.",
+    "category": "Career",
+    "categorySlug": "career",
+    "tag": "Career",
+    "date": "2026-11-24",
+    "cover": "/img/cover-job-application-mistakes.webp",
+    "coverFallback": "/img/cover-job-application-mistakes.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Cream linen desk with a laptop, a printed page and pen, a coffee mug and reading glasses",
+    "excerpt": "A generic CV, a salary number given too early, an email address from 2013: the first-job mistakes that cost real money, and the fix for each.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "The costliest first job application mistakes are sending one generic CV everywhere, applying with no human contact, naming a salary number before the employer does, waiting until you feel ready, using an unprofessional email address, skipping follow-up, and accepting an offer without reading the benefits. Together they cost weeks of income and $2,000 to $6,000 a year in starting salary."
   }
 ]
