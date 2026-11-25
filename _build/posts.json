@@ -299,5 +299,25 @@
     "money": true,
     "templateCallout": true,
     "shortAnswer": "The costliest first job application mistakes are sending one generic CV everywhere, applying with no human contact, naming a salary number before the employer does, waiting until you feel ready, using an unprofessional email address, skipping follow-up, and accepting an offer without reading the benefits. Together they cost weeks of income and $2,000 to $6,000 a year in starting salary."
+  },
+  {
+    "slug": "sunday-money-reset",
+    "title": "The Sunday Money Reset:<br>A 25-Minute Weekly Routine",
+    "titlePlain": "The Sunday Money Reset: A 25-Minute Weekly Routine",
+    "seoTitle": "The Sunday Money Reset: A Weekly Money Routine",
+    "meta": "A 25-minute weekly money routine for Sundays: check the real balance, list what is due, move savings, and get one daily number until payday.",
+    "category": "Budgeting",
+    "categorySlug": "budgeting",
+    "tag": "Budgeting",
+    "date": "2026-11-25",
+    "cover": "/img/cover-sunday-money-reset.webp",
+    "coverFallback": "/img/cover-sunday-money-reset.png",
+    "coverWidth": 1200,
+    "coverHeight": 750,
+    "coverAlt": "Cream linen desk with an open weekly planner, a pen, a coffee mug and folded banknotes",
+    "excerpt": "Monthly budgets fail in the three weeks nobody looks at them. A 25-minute Sunday reset keeps the gap to seven days, and it is five small steps.",
+    "money": true,
+    "templateCallout": true,
+    "shortAnswer": "A weekly money routine beats a monthly one because the week is still fixable. On Sunday: read the real balance, list everything due before next Sunday, move this week's savings, cancel or check one renewal, then divide what is left by the days until payday for a daily number. Twenty-five minutes, and the month stops surprising you."
   }
 ]

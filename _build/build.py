@@ -982,6 +982,7 @@ def build_llms():
         "expenses-to-cut": "Ten expense cuts that cost you nothing you can feel, with typical US amounts and what each one gives up.",
         "saving-on-low-salary": "How to save when the salary is tight: why percentages fail, the $25 that survives, a $500 floor, and the four cuts worth $60 to $150 a month.",
         "50-30-20-rule": "The 50/30/20 split bucket by bucket, the same salary worked line by line, the 60/20/20 and 70/20/10 versions, and where debt payments belong.",
+        "sunday-money-reset": "The 25-minute Sunday reset step by step, why weekly beats monthly, what it saves in avoided fees, and the ten-minute version for bad weeks.",
     }
     lines = [
         f"# {SITE['name']}",
